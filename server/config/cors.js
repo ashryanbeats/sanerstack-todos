@@ -1,8 +1,11 @@
 let allowList = [];
 
 const corsOptions = {
-  origin: (origin, callback) => {        
-    if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "test") {
+  origin: (origin, callback) => {
+    if (
+      process.env.NODE_ENV === "development" ||
+      process.env.NODE_ENV === "test"
+    ) {
       const localDevOrigins = ["http://localhost:3000", undefined];
       allowList = [...allowList, ...localDevOrigins];
     }

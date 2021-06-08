@@ -3,12 +3,10 @@ import Todos from "./Todos";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        App header
-      </header>
+      <header className="App-header">App header</header>
       <div id="app-body">
         App body
-         <Todos />
+        <Todos />
       </div>
     </div>
   );
